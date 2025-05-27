@@ -33,13 +33,18 @@ public class CardTrick {
             c.setValue(rand.nextInt(13) + 1); // value between 1 and 13
             c.setSuit(Card.SUITS[rand.nextInt(4)]); // random suit from 0 to 3
             magicHand[i] = c;
-            
+           
         }
+         // Hard-coded lucky card
+            Card luckyCard = new Card();
+            luckyCard.setValue(2);
+            luckyCard.setSuit("Clubs");
         
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
         // add one luckcard hard code 2,clubs
+        
         Scanner input = new Scanner(System.in);
 
 // Ask user for card value
